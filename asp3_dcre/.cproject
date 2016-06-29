@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.renesas.cdt.library.rz.debug.win32.toolchain.Id.1841388882">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.renesas.cdt.library.rz.debug.win32.toolchain.Id.1841388882" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="com.renesas.cdt.library.rz.debug.win32.toolchain.Id.1841388882" name="Debug" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="com.renesas.cdt.library.rz.debug.win32.toolchain.Id.1841388882.590478314" name="/" resourcePath="">
+						<toolChain id="com.renesas.cdt.library.rz.debug.win32.toolchain.Id.1771572618" name="KPIT GNUARM-NONE-EABI Toolchain" superClass="com.renesas.cdt.library.rz.debug.win32.toolchain.Id">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.PE" id="com.renesas.cdt.rz.libraryProject.debug.win32.targetplatform.Id.2126887400" name="Target Platform" osList="win32,linux" superClass="com.renesas.cdt.rz.libraryProject.debug.win32.targetplatform.Id"/>
+							<builder buildPath="${workspace_loc:/asp3_dcre}/Debug" id="com.renesas.cdt.rz.library.project.debug.win32.builder.Id.1314470081" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Builder" superClass="com.renesas.cdt.rz.library.project.debug.win32.builder.Id"/>
+							<tool id="com.renesas.cdt.rz.libraryProject.debug.win32.tool.compiler.Id.536470840" name="Compiler" superClass="com.renesas.cdt.rz.libraryProject.debug.win32.tool.compiler.Id">
+								<option defaultValue="true" id="com.renesas.cdt.core.Compiler.option.misc2.954795181" name="標準システム・ディレクトリーでヘッダー・ファイルを検索しない (-nostdinc)" superClass="com.renesas.cdt.core.Compiler.option.misc2" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.rz.Debug.Compiler.option.library.macroDefines.398173955" name="マクロ定義" superClass="com.renesas.cdt.rz.Debug.Compiler.option.library.macroDefines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="TOPPERS_EXECUTE_ON_ROM"/>
+									<listOptionValue builtIn="false" value="__TARGET_ARCH_ARM=7"/>
+									<listOptionValue builtIn="false" value="TARGET_RZ_A1H"/>
+									<listOptionValue builtIn="false" value="TARGET_MBRZA1H"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_ARM"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_A"/>
+									<listOptionValue builtIn="false" value="MBED_BUILD_TIMESTAMP=1460441486.52"/>
+									<listOptionValue builtIn="false" value="TARGET_RENESAS"/>
+									<listOptionValue builtIn="false" value="__FPU_PRESENT"/>
+									<listOptionValue builtIn="false" value="TARGET_A9"/>
+									<listOptionValue builtIn="false" value="TARGET_KERNEL_ASP"/>
+									<listOptionValue builtIn="false" value="SUPPORT_INET4"/>
+									<listOptionValue builtIn="false" value="SUPPORT_ETHER"/>
+									<listOptionValue builtIn="false" value="SUPPORT_TCP"/>
+									<listOptionValue builtIn="false" value="TCP_CFG_LIBRARY"/>
+									<listOptionValue builtIn="false" value="UDP_CFG_LIBRARY"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.core.Compiler.option.includeFileDir.927290809" name="インクルード・ファイル・ディレクトリー" superClass="com.renesas.cdt.core.Compiler.option.includeFileDir" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/arch/arm_gcc/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/arch/arm_gcc/rza1}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/arch/gcc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/hal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/targets/cmsis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H/inc/iodefines}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/targets/hal/TARGET_RENESAS/TARGET_RZ_A1H}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/targets/hal/TARGET_RENESAS/TARGET_RZ_A1H/TARGET_MBED_MBRZA1H}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/sample}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/target/gr_peach_gcc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/tinet}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/tecs_kernel}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/tinet/netdev/if_mbed}&quot;"/>
+								</option>
+								<inputType id="%Base.Compiler.C.InputType.Id.1288629611" name="C 入力" superClass="%Base.Compiler.C.InputType.Id"/>
+								<inputType id="Base.Compiler.CPP.InputType.Id.1225885021" name="C++ 入力" superClass="Base.Compiler.CPP.InputType.Id"/>
+							</tool>
+							<tool id="com.renesas.cdt.library.rz.Debug.win32.tool.assembler.Id.671456766" name="Assembler" superClass="com.renesas.cdt.library.rz.Debug.win32.tool.assembler.Id">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.core.Assembler.option.symbolDefines.971215894" name="シンボル定義" superClass="com.renesas.cdt.core.Assembler.option.symbolDefines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="TOPPERS_EXECUTE_ON_ROM"/>
+									<listOptionValue builtIn="false" value="__TARGET_ARCH_ARM=7"/>
+									<listOptionValue builtIn="false" value="TARGET_RZ_A1H"/>
+									<listOptionValue builtIn="false" value="TARGET_MBRZA1H"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_ARM"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_A"/>
+									<listOptionValue builtIn="false" value="MBED_BUILD_TIMESTAMP=1460441486.52"/>
+									<listOptionValue builtIn="false" value="TARGET_RENESAS"/>
+									<listOptionValue builtIn="false" value="__FPU_PRESENT"/>
+									<listOptionValue builtIn="false" value="TARGET_A9"/>
+									<listOptionValue builtIn="false" value="TARGET_KERNEL_ASP"/>
+									<listOptionValue builtIn="false" value="SUPPORT_INET4"/>
+									<listOptionValue builtIn="false" value="SUPPORT_ETHER"/>
+									<listOptionValue builtIn="false" value="SUPPORT_TCP"/>
+									<listOptionValue builtIn="false" value="TCP_CFG_LIBRARY"/>
+									<listOptionValue builtIn="false" value="UDP_CFG_LIBRARY"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.core.Assembler.option.includeFileDirectories.304696526" name="インクルード・ファイル・ディレクトリー" superClass="com.renesas.cdt.core.Assembler.option.includeFileDirectories" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/arch/arm_gcc/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/arch/arm_gcc/rza1}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/arch/gcc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/hal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/targets/cmsis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H/inc/iodefines}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/targets/hal/TARGET_RENESAS/TARGET_RZ_A1H}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/mbed/targets/hal/TARGET_RENESAS/TARGET_RZ_A1H/TARGET_MBED_MBRZA1H}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/sample}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/target/gr_peach_gcc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/tinet}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/tecs_kernel}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/asp3_dcre/tinet/netdev/if_mbed}&quot;"/>
+								</option>
+								<inputType id="%Base.Assembler.inputType.Id.1252900416" name="アセンブラー入力タイプ" superClass="%Base.Assembler.inputType.Id"/>
+							</tool>
+							<tool id="com.renesas.cdt.library.rz.debug.win32.tool.archive.Id.1157579488" name="Archive Generator" superClass="com.renesas.cdt.library.rz.debug.win32.tool.archive.Id"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="asp3_dcre.null.475609641" name="asp3_dcre"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/asp3_dcre"/>
+		</configuration>
+	</storageModule>
+</cproject>

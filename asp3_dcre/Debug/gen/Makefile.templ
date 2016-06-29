@@ -1,0 +1,132 @@
+# このファイルは tecsgen により自動生成されました
+# Makefile.temp は gen の一つ上のディレクトリに移して使用します
+#  % mv Makefile.temp Makefile
+# 
+# clean のデフォルト動作は $(GEN_DIR)/Makefile.* を削除します
+#
+# このファイルは GNU make で gcc を用い POSIX 環境で動作するモジュールをビルドするのに適切なように生成されています
+# vpath, CFLAGS, OTHER_OBJS などを調整する必要があるかもしれません
+# 他の環境やターゲットの場合、このファイルを元に変更する必要があります
+
+# 変数 #_MVAR_#
+# fixed variable (unchangeable by config or plugin)
+TARGET_BASE = sample1n
+BASE_DIR = .
+GEN_DIR = $(BASE_DIR)/./gen
+INCLUDES = -I $(BASE_DIR)/. -I $(BASE_DIR)/. -I $(BASE_DIR)/../include -I $(BASE_DIR)/../target/gr_peach_gcc -I $(BASE_DIR)/../arch/arm_gcc/rza1 -I $(BASE_DIR)/../arch/arm_gcc/common -I $(BASE_DIR)/../arch/gcc -I $(BASE_DIR)/../mbed/api -I $(BASE_DIR)/../mbed/hal -I $(BASE_DIR)/../mbed/targets/cmsis -I $(BASE_DIR)/../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H -I $(BASE_DIR)/../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H/inc -I $(BASE_DIR)/../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H/inc/iodefines -I $(BASE_DIR)/../mbed/targets/hal/TARGET_RENESAS/TARGET_RZ_A1H -I $(BASE_DIR)/../mbed/targets/hal/TARGET_RENESAS/TARGET_RZ_A1H/TARGET_MBED_MBRZA1H -I $(BASE_DIR)/.. -I $(BASE_DIR)/../sample -I $(BASE_DIR)/../tinet/netdev/if_mbed -I $(BASE_DIR)/../tinet -I $(BASE_DIR)/./gen -I $(BASE_DIR)/../tecs_kernel -I $(TECSPATH) -I $(TECSPATH)/mruby -I $(TECSPATH)/posix -I $(TECSPATH)/rpc -I $(GEN_DIR)
+DEFINES =
+
+# end of fixed variable (unchangeable by config or plugin)
+#default C Compiler
+CC = gcc
+
+#default C Compiler options
+CFLAGS = $(INCLUDES) $(DEFINES) -D  "Inline=static inline"
+
+#default Liknker
+LD = gcc
+
+#default Liknker Options
+LDFLAGS = 
+
+#default source directory
+SRC_DIR = $(BASE_DIR)/src
+
+#default target name
+TARGET = $(TARGET_BASE).exe
+
+#default TECS generator
+TECSGEN = tecsgen
+
+#Time Stamp
+TIMESTAMP = $(GEN_DIR)/tecsgen.timestamp
+
+#default relocatable object (.o) directory
+_TECS_OBJ_DIR = $(GEN_DIR)/
+
+
+
+# Pre-tecsgen target
+PRE_TECSGEN_TARGET =
+
+# Post-tecsgen target
+POST_TECSGEN_TARGET =
+
+# vpath for C sources and headers
+vpath %.c $(SRC_DIR) $(GEN_DIR)  ../include ../target/gr_peach_gcc ../arch/arm_gcc/rza1 ../arch/arm_gcc/common ../arch/gcc ../mbed/api ../mbed/hal ../mbed/targets/cmsis ../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H ../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H/inc ../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H/inc/iodefines ../mbed/targets/hal/TARGET_RENESAS/TARGET_RZ_A1H ../mbed/targets/hal/TARGET_RENESAS/TARGET_RZ_A1H/TARGET_MBED_MBRZA1H .. ../sample ../tinet/netdev/if_mbed ../tinet ./gen ../tecs_kernel $(TECSPATH) $(TECSPATH)/mruby $(TECSPATH)/posix $(TECSPATH)/rpc
+vpath %.h $(SRC_DIR) $(GEN_DIR)  ../include ../target/gr_peach_gcc ../arch/arm_gcc/rza1 ../arch/arm_gcc/common ../arch/gcc ../mbed/api ../mbed/hal ../mbed/targets/cmsis ../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H ../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H/inc ../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H/inc/iodefines ../mbed/targets/hal/TARGET_RENESAS/TARGET_RZ_A1H ../mbed/targets/hal/TARGET_RENESAS/TARGET_RZ_A1H/TARGET_MBED_MBRZA1H .. ../sample ../tinet/netdev/if_mbed ../tinet ./gen ../tecs_kernel $(TECSPATH) $(TECSPATH)/mruby $(TECSPATH)/posix $(TECSPATH)/rpc
+
+# Other objects (out of tecsgen)
+OTHER_OBJS =                      # Add objects out of tecs care.
+# OTHER_OBJS = $(_TECS_OBJ_DIR)vasyslog.o
+# ルール #_MRUL_#
+allall: tecs
+	make all     # in order to include generated Makefile.tecsgen & Makefile.depend
+
+all : $(TARGET)
+
+
+# depend を include #_MDEP_#
+-include $(GEN_DIR)/Makefile.tecsgen
+-include $(GEN_DIR)/Makefile.depend
+
+$(TARGET) : $(TIMESTAMP) $(CELLTYPE_COBJS) $(TECSGEN_COBJS) $(PLUGIN_COBJS) $(OTHER_OBJS)
+	$(LD) -o $(TARGET) $(TECSGEN_COBJS) $(CELLTYPE_COBJS) $(PLUGIN_COBJS) $(OTHER_OBJS) $(LDFLAGS)
+
+clean :
+	rm -f $(CELLTYPE_COBJS) $(TECSGEN_COBJS) $(PLUGIN_COBJS) $(OTHER_OBJS) $(TARGET)  $(TIMESTAMP)
+	rm -rf $(GEN_DIR)
+
+tecs : $(PRE_TECSGEN_TARGET) $(TIMESTAMP) $(POST_TECSGEN_TARGET)
+
+$(TIMESTAMP) : $(TECS_IMPORTS)
+	$(TECSGEN)  ../sample/sample1n.cdl -R -I. -I../include -I../target/gr_peach_gcc -I../arch/arm_gcc/rza1 -I../arch/arm_gcc/common -I../arch/gcc -I../mbed/api -I../mbed/hal -I../mbed/targets/cmsis -I../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H -I../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H/inc -I../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H/inc/iodefines -I../mbed/targets/hal/TARGET_RENESAS/TARGET_RZ_A1H -I../mbed/targets/hal/TARGET_RENESAS/TARGET_RZ_A1H/TARGET_MBED_MBRZA1H -I.. -I../sample -I../tinet/netdev/if_mbed -I../tinet -I./gen -I../tecs_kernel --cpp arm-none-eabi-gcc  -DTOPPERS_EXECUTE_ON_ROM -D__TARGET_ARCH_ARM=7 -DTARGET_RZ_A1H -DTARGET_MBRZA1H -DTOOLCHAIN_GCC_ARM -DTOOLCHAIN_GCC -DTARGET_CORTEX_A -DMBED_BUILD_TIMESTAMP=1460441486.52 -DTARGET_RENESAS -D__FPU_PRESENT   -DTARGET_KERNEL_ASP -DSUPPORT_INET4 -DSUPPORT_ETHER -DSUPPORT_TCP -I. -I../include  -I../target/gr_peach_gcc -I../arch/arm_gcc/rza1 -I../arch/arm_gcc/common -I../arch/gcc -I../mbed/api -I../mbed/hal -I../mbed/targets/cmsis -I../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H -I../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H/inc -I../mbed/targets/cmsis/TARGET_RENESAS/TARGET_RZ_A1H/inc/iodefines -I../mbed/targets/hal/TARGET_RENESAS/TARGET_RZ_A1H -I../mbed/targets/hal/TARGET_RENESAS/TARGET_RZ_A1H/TARGET_MBED_MBRZA1H -I.. -I../sample -I../tinet/netdev/if_mbed -I../tinet -I./gen -I../tecs_kernel   -fno-strict-aliasing -D TECSGEN -E -g ./gen
+# generic target for objs
+$(_TECS_OBJ_DIR)%.o : %.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+$(_TECS_OBJ_DIR)tTask.o : tTask.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+$(_TECS_OBJ_DIR)tSemaphore.o : tSemaphore.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+$(_TECS_OBJ_DIR)tInterruptRequest.o : tInterruptRequest.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+$(_TECS_OBJ_DIR)tISR.o : tISR.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+$(_TECS_OBJ_DIR)tInitializeRoutine.o : tInitializeRoutine.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+$(_TECS_OBJ_DIR)tTerminateRoutine.o : tTerminateRoutine.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+$(_TECS_OBJ_DIR)tSerialPortMain.o : tSerialPortMain.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+$(_TECS_OBJ_DIR)tSerialAdapter.o : tSerialAdapter.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+$(_TECS_OBJ_DIR)tSysLog.o : tSysLog.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+$(_TECS_OBJ_DIR)tSysLogAdapter.o : tSysLogAdapter.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+$(_TECS_OBJ_DIR)tLogTaskMain.o : tLogTaskMain.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+$(_TECS_OBJ_DIR)tBannerMain.o : tBannerMain.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+$(_TECS_OBJ_DIR)tPutLogGRPeach.o : tPutLogGRPeach.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+$(_TECS_OBJ_DIR)tSCIF.o : tSCIF.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
+$(_TECS_OBJ_DIR)tSIOPortGRPeachMain.o : tSIOPortGRPeachMain.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+ 
