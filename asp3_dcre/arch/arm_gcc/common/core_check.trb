@@ -18,9 +18,8 @@ IncludeTrb("kernel/kernel_check.trb")
 # 行わない．
 #
 inhTable = SYMBOL("_kernel_inh_table")
-offset = SYMBOL("__etext") - SYMBOL("__data_start__")
 $cfgData[:DEF_INH].each do |key, params|
-  inthdr = PEEK(inhTable + offset + params[:inhno] * $sizeof_FP, $sizeof_FP)
+  inthdr = PEEK(inhTable + params[:inhno] * $sizeof_FP, $sizeof_FP)
 
   #	割込みハンドラの先頭番地のチェック［NGKI3056］
   if (inthdr & ($CHECK_FUNC_ALIGN - 1)) != 0

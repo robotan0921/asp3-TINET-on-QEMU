@@ -45,6 +45,8 @@
 #ifndef TOPPERS_TARGET_TIMER_H
 #define TOPPERS_TARGET_TIMER_H
 
+#include "ct11mpcore.h"
+
 /*
  *  チップで共通な定義（MPCore用）
  */

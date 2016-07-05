@@ -37,7 +37,7 @@
  *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
  *  の責任を負わない．
  * 
- *  $Id: core_kernel_impl.h 971 2016-06-21 14:57:36Z coas-nagasima $
+ *  $Id: core_kernel_impl.h 664 2016-02-29 16:32:29Z ertl-hiro $
  */
 
 /*
@@ -323,7 +323,7 @@ extern void start_r(void);
 /*
  *  割込みハンドラテーブル（kernel_cfg.c）
  */
-extern FP inh_table[TNUM_INHNO];
+extern const FP inh_table[TNUM_INHNO];
 
 /*
  *  割込み要求ライン設定テーブル（kernel_cfg.c）

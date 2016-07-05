@@ -208,11 +208,15 @@
  *  NIC (RTL8019AS) に関する定義
  */
 
-#define ED_BASE_ADDRESS		ULONG_C(0x00200000)	/* NIC のレジスタベースアドレス */
+//#define ED_BASE_ADDRESS		ULONG_C(0x00200000)	/* NIC のレジスタベースアドレス */
+#define ED_BASE_ADDRESS		ULONG_C(0x4e000000)	/* NIC のレジスタベースアドレス */
 
+#define TINTNO_IRQ5 41
 #define INHNO_IF_ED		TINTNO_IRQ5		/* IRQ5 */
 #define INTNO_IF_ED		TINTNO_IRQ5		/* IRQ5 */
-#define INTATR_IF_ED		(TA_NEGEDGE)		/* 割込み属性	*/
+//#define INTATR_IF_ED		(TA_NEGEDGE)		/* 割込み属性	*/
+//#define INTATR_IF_ED		(TA_POSEDGE)		/* 割込み属性	*/
+#define INTATR_IF_ED		(TA_EDGE)		/* 割込み属性	*/
 #define INTPRI_IF_ED		(-1)						/* 割込み優先度	*/
 
 /*

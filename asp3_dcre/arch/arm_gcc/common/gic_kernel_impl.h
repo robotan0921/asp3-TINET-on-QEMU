@@ -34,7 +34,7 @@
  *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
  *  の責任を負わない．
  * 
- *  $Id: gic_kernel_impl.h 971 2016-06-21 14:57:36Z coas-nagasima $
+ *  $Id: gic_kernel_impl.h 714 2016-03-31 05:52:19Z ertl-hiro $
  */
 
 /*

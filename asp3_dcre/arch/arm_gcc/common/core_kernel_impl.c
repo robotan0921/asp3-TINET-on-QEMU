@@ -37,7 +37,7 @@
  *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
  *  の責任を負わない．
  * 
- *  $Id: core_kernel_impl.c 971 2016-06-21 14:57:36Z coas-nagasima $
+ *  $Id: core_kernel_impl.c 541 2016-01-16 03:09:21Z ertl-hiro $
  */
 
 /*

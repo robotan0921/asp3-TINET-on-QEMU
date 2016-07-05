@@ -1,7 +1,7 @@
 /*
  *		cfg1_out.cのリンクに必要なスタブの定義
  *
- *  $Id: core_cfg1_out.h 971 2016-06-21 14:57:36Z coas-nagasima $
+ *  $Id: core_cfg1_out.h 349 2015-07-25 05:25:27Z ertl-hiro $
  */
 
 /*

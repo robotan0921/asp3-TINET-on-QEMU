@@ -37,7 +37,7 @@
  *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
  *  の責任を負わない．
  * 
- *  $Id: core_support.S 971 2016-06-21 14:57:36Z coas-nagasima $
+ *  $Id: core_support.S 733 2016-04-03 09:10:54Z ertl-hiro $
  */
 
 /*
@@ -75,7 +75,7 @@ ALABEL(vector_table)
 	AGLOBAL(vector_ref_table)
 ALABEL(vector_ref_table)
 ALABEL(reset_vector)
-	ALONG	Reset_Handler
+	ALONG	start
 ALABEL(undef_vector)
 	ALONG	undef_handler
 ALABEL(svc_vector)

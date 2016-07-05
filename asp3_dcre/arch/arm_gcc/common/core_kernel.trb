@@ -64,7 +64,7 @@ IncludeTrb("kernel/kernel.trb")
 #
 $kernelCfgC.comment_header("Interrupt Handler Table")
 
-$kernelCfgC.add("FP _kernel_inh_table[TNUM_INHNO] = {")
+$kernelCfgC.add("const FP _kernel_inh_table[TNUM_INHNO] = {")
 $INHNO_VALID.each_with_index do |inhnoVal, index|
   $kernelCfgC.add(",") if index > 0
   $kernelCfgC.append("\t/* 0x#{sprintf("%03x", inhnoVal)} */ ")

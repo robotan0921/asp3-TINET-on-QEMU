@@ -76,7 +76,7 @@
 #include <sil.h>
 #include <t_syslog.h>
 #include "kernel_cfg.h"
-#include "target_config.h"
+#include "target_kernel_impl.h"
 
 #endif	/* of #ifdef TARGET_KERNEL_ASP */
 
