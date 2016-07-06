@@ -71,7 +71,7 @@ SRCDIR = ..
 #
 #  オブジェクトファイル名の拡張子の設定
 #
-OBJEXT = exe
+OBJEXT =
 
 #
 #  カーネルライブラリ（libkernel.a）のディレクトリ名
